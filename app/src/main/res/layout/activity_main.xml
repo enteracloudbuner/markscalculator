@@ -1,0 +1,217 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+   android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_pakistan"
+            android:id="@+id/rlmatric">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/roundbtn"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:text="SSC/Matric"
+        android:textSize="30sp"
+        android:id="@+id/matric"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/matric"
+        android:id="@+id/ti1"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ninthscore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter obtained marks in Class 9th"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHighlight="#0C3733"
+            android:textColorLink="#023E38" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ti1"
+        android:text="calculte"
+        android:background="@drawable/roundbtn"
+        android:id="@+id/btnmatic"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/btnmatic"
+        android:id="@+id/tvmatric"
+
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvmatric"
+        android:id="@+id/tvtotalmatric"
+
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtotalmatric"
+
+        android:id="@+id/tvpercentage"
+        android:textAlignment="center"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tvpercentage"
+        android:id="@+id/tvgrade"
+        android:textAlignment="center"
+
+        />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+
+        android:id="@+id/rlhssc">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="HSSC/Intermediate"
+            android:background="@drawable/roundbtn"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/fsc"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/fsc"
+            android:id="@+id/ti2"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/eleventhscore"
+                android:textAlignment="center"
+                android:textColorHighlight="#0C3733"
+                android:textColorLink="#023E38"
+                android:hint="Enter obtained marks in Class 11th"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ti2"
+            android:text="calculte"
+            android:background="@drawable/roundbtn"
+            android:id="@+id/bthssc"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bthssc"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/tvhssc"
+
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvhssc"
+            android:id="@+id/tvtotalhssc"
+
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtotalhssc"
+            android:textSize="20sp"
+            android:textColor="#000000"
+
+            android:id="@+id/tvpercentage1"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/tvpercentage1"
+
+            android:id="@+id/tvgrade1"
+            android:textAlignment="center"
+
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/details"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="More Detail..."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
